@@ -1,0 +1,83 @@
+body {
+  background: rgb(125, 125, 173);
+}
+
+header {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  width: 476px;
+  height: 536px;
+  margin: 0 auto;
+  background: #212226;
+}
+
+.visor {
+  width: 476px;
+  height: 136px;
+  background: #212226;
+  border-radius: 4px;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#operation {
+  width:100%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #D863BB;
+  font-size: 40px;
+}
+
+.content-calc {
+  display: grid;
+  grid-template-columns: 117px 117px 117px 117px;
+  gap: 2px;
+  width: 476px;
+  padding-bottom: 8px;
+  background: #212226;
+  border-radius: 4px;
+  
+}
+
+.button {
+  width: 117px;
+  height: 79px;
+  background: #151618;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.gray {
+  background: #070708;
+}
+
+.orange {
+  background: #71D385;
+}
+
+#number0 {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 5;
+   grid-row-end: 6;
+   width: 234px;
+  
+}
+
+#igual {
+  grid-column-start: 4;
+   grid-column-end: 5;
+   grid-row-start: 4;
+   grid-row-end: 6;
+   height: 158px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+      <h1>Calculadora</h1>
+    </header>
+
+    <section class="container">
+      <div class="visor">
+        <div id="operation">
+          
+        </div>
+      </div>
+      <div class="content-calc">
+        <input type="button" value="C" class="button" id="porcent" onclick="clean()">
+        <input type="button" value="&#8656;" class="button" id="del-history" onclick="back()">
+        <input type="button" value="/" class="button" id="dividir" onclick="insert('/')">
+        <input type="button" value="X" class="button" id="multiplic" onclick="insert('*')">
+        <input type="button" value="7" class="button gray" id="number7" onclick="insert('7')">
+        <input type="button" value="8" class="button gray" id="number8" onclick="insert('8')">
+        <input type="button" value="9" class="button gray" id="number9" onclick="insert('9')">
+        <input type="button" value="-" class="button" id="subtracao" onclick="insert('-')">
+        <input type="button" value="4" class="button gray" id="number4" onclick="insert('4')">
+        <input type="button" value="5" class="button gray" id="number5" onclick="insert('5')">
+        <input type="button" value="6" class="button gray" id="number6" onclick="insert('6')">
+        <input type="button" value="+" class="button" id="somar" onclick="insert('+')">
+        <input type="button" value="1" class="button gray" id="number1" onclick="insert('1')">
+        <input type="button" value="2" class="button gray" id="number2" onclick="insert('2')">
+        <input type="button" value="3" class="button gray" id="number3" onclick="insert('3')">
+        <input type="button" value="=" class="button orange" id="igual" onclick="calcular()">
+        <input type="button" value="0" class="button gray" id="number0" onclick="insert('0')">
+        <input type="button" value="." class="button" id="ponto" onclick="insert('.')">
+        
+      </div>
+    </section>
+    <script src="./js/script.js"></script>
+</body>
+</html>
